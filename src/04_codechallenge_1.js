@@ -11,5 +11,8 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 
 const prompt = require('prompt-sync')({sigint: true});
 
-let Zahl1 = prompt("Zahl1:");
-let Zahl2 = prompt("Zahl2:");
+let zahl1, zahl2, summe;
+zahl1 =parseInt(prompt("Zahl 1: "));
+zahl2 =parseInt(prompt("Zahl 2: "));
+summe = zahl1 + zahl2;
+console.log("Die Summe der Zahlen ist: " +summe);
