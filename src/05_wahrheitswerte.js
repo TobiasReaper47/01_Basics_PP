@@ -20,5 +20,7 @@ console.log("ageMark: " + ageMark);
 // Tests
 let isJohnOlder; // Is John older? --> y/n --> true | false
 isJohnOlder = (ageJohn > ageMark);
+let isJohnEqual = (ageJohn == ageMark);
 
 console.log("isJohnOlder: " + isJohnOlder);
+console.log ("isJohnEqual: " + isJohnEqual);
