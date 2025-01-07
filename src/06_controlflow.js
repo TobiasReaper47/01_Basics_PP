@@ -76,6 +76,8 @@ job = "artist"; // .. malt ein Bild!
 job = "pilot"; // .. macht etwas anderes! --> default
 job = "teacher"; // .. unterrichtet!
 job = "instructor"; // .. unterrichtet!
+job = "hunter"; // ..jagt!
+
 
 switch (job) 
 {
@@ -91,7 +93,10 @@ switch (job)
     case "teacher": // job == "teacher"
     case "instructor": // job =="instructor"    
         console.log(firstName + " unterrichtet!");
-        break;  
+        break;
+    case "hunter": // job == "hunter"
+        console.log(firstName + " jagt!");
+        break;
         
         
 
