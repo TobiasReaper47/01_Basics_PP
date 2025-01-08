@@ -87,7 +87,8 @@ output(getString("Max","Mütze"));
 function getString(firstName, secondName) {
     const GAP = " ";
     let outputStr = "Hallo,"+ GAP + firstName + GAP + secondName + "!"
-    
+    return outputStr;   // return schickt die Daten an den call
+    console.log("Test");    // retrun beendet die Funktion
 }
 
 
