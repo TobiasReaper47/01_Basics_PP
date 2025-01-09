@@ -4,30 +4,36 @@
 
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
+3. Fkt. Grundrechenarten : check!
 4. Ausgabe in Konsole : check!
 */
 
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich";
 
 // module: division a / b |  test:
-output(divide(4,2));
-output(divide(3,2));
-output(divide(3,-2));
-output(divide(0,2));
-output(divide(3,0));
-output(divide(0,0));
+// output(divide(4,2));
+// output(divide(3,2));
+// output(divide(3,-2));
+// output(divide(0,2));
+// output(divide(3,0));
+// output(divide(0,0));
 function divide(a,b) 
 {
-    if (b != 0) {   // Test
-        return a / b    
-    } else {
+    if (b == 0) // Ausnahme
+    {
         return ERROR_STR_DIV
     }
-
-
-    
+    return a / b;
 }
+
+
+    // if (b != 0) {   // Test
+    //     return a / b    
+    // } else {
+    //     return ERROR_STR_DIV
+    // }
+ 
+// }
 
 
 // module: multiplication a * b |  test:
