@@ -35,13 +35,12 @@ let person = {
                 firstName: "Max",
                 familyName: "Mütze",
                 salary: [120000, 160000],
-                sayHello: function()    {
+                sayHello: function() {
                     return "Hallo";
+                },
+                sayHello2: function() {
+                    return "Hallo, ich bin" +this.firstName;
                 }
-
-
-
-
 };
 
 
@@ -51,7 +50,7 @@ output(person.familyName);
 output(person.salary[1]);
 output(person.sayHello());
 
-const txt = "Hallo, " + ", ich bin " + person.firstName +
+const txt = person.sayHello + ", ich bin " + person.firstName +
             " und verdiene " + person.salary[1] + " p.a."
 
 output(txt)
