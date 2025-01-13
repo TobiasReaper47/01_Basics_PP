@@ -26,3 +26,39 @@ let arr;
 //         output(arr[i][j]);       
 //     }
 // }
+
+
+
+/***** Objekte 1 Daten/Funktionen ********/
+
+let person = {
+                firstName: "Max",
+                familyName: "Mütze",
+                salary: [120000, 160000],
+                sayHello: function()    {
+                    return "Hallo";
+                }
+
+
+
+
+};
+
+
+output(person);
+output(person.firstName);
+output(person.familyName);
+output(person.salary[1]);
+output(person.sayHello());
+
+const txt = "Hallo, " + ", ich bin " + person.firstName +
+            " und verdiene " + person.salary[1] + " p.a."
+
+output(txt)
+
+
+// Modul: Ausgabe | Test
+//output("hi");
+function output(outputData) {
+    console.log(outputData);
+}
